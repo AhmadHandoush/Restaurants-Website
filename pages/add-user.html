@@ -19,19 +19,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/add-user.css" />
   </head>
   <body>
-    
-
     <nav class="navbar navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-        </div>
-      </nav>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+      </div>
+    </nav>
 
-
-    
     <section class="admin-page flex">
       <aside class="sidebar">
         <h3><a href="#">Admin Dashboard</a></h3>
@@ -39,10 +35,14 @@
         <div class="links">
           <ul>
             <li class="nav-list flex">
-              <a href="./admin.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+              <a href="./admin.html"
+                ><i class="fa-solid fa-house"></i><span>Home</span></a
+              >
             </li>
             <li class="nav-list flex">
-              <a href="./users.html"><i class="fa-solid fa-user"></i><span>Users</span></a>
+              <a href="./users.html"
+                ><i class="fa-solid fa-user"></i><span>Users</span></a
+              >
             </li>
             <li class="nav-list flex">
               <a href="./restaurants.html"
@@ -53,13 +53,15 @@
             <li class="nav-list flex">
               <a href="./add-user.html"
                 ><i class="fa-solid fa-building-columns"></i
-                ><span>Add User</span></a>
-            </li> 
+                ><span>Add User</span></a
+              >
+            </li>
             <li class="nav-list flex">
               <a href="./add-restaurant.html"
                 ><i class="fa-solid fa-building-columns"></i
-                ><span>Add Restaurants</span></a>
-                </li>
+                ><span>Add Restaurants</span></a
+              >
+            </li>
             <li class="nav-list flex">
               <a href="#"
                 ><i class="fa-solid fa-envelope"></i><span>Feedbacks</span></a
@@ -68,32 +70,23 @@
           </ul>
         </div>
       </aside>
-       
-      <div class="col-lg-9 flex-center">
-        
-          <div class="row section flex-center">
-          <div class="col-lg-9 ">
-            <div>
-              <label for="name">Name:</label>
-              <input type="text" id="name">
-            </div>
-            <div>
-              <label for="email">Email:</label>
-              <input type="email" id="email">
-            </div>
-            <div>
-              <label for="age">Age:</label>
-              <input type="number" id="age">
-            </div>
-            <button onclick="saveData()">Save Data</button>
-            
 
-            
+      <div class="col-lg-9 flex-center">
+        <div class="form">
+          <h3>Add User</h3>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" />
           </div>
-            
-          
-            </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" />
           </div>
+          <div>
+            <label for="age">password:</label>
+            <input type="password" id="age" />
+          </div>
+          <button onclick="saveData()">Save Data</button>
         </div>
       </div>
     </section>
