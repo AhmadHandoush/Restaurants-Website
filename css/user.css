@@ -1,3 +1,53 @@
 .section {
+  align-items: flex-start;
+}
+.add {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.add button {
+  outline: none;
+  border: none;
+  padding: 0px 20px;
   background-color: red;
+  width: fit-content;
+  text-align: right;
+  border-radius: 6px;
+}
+.add a {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table button {
+  outline: none;
+  border: none;
+  padding: 5px;
+  background-color: red;
+  color: white;
+  border-radius: 6px;
+}
+table button:hover {
+  opacity: 0.6;
+}
+td {
+  font-weight: bold;
 }
