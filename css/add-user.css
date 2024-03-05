@@ -1,7 +1,14 @@
 .form {
   background-color: rgba(0, 0, 0, 0.6);
   width: 40%;
-  padding: 10px 20px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form h1 {
+  text-align: center;
+  color: red;
 }
 .form label {
   display: block;
@@ -14,9 +21,9 @@
 }
 .form button {
   outline: none;
-  margin-top: 20px;
   border: none;
-  padding: 5px 20px;
-  border-radius: 6px;
-  font-weight: bold;
+  background-color: red;
+  color: white;
+  width: fit-content;
+  padding: 2px 20px;
 }

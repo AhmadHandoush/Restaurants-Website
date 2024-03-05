@@ -1,5 +1,12 @@
+.show {
+  /* align-items: flex-start; */
+  display: flex;
+  padding-top: 20px;
+
+  justify-content: center;
+}
 .section {
-  align-items: flex-start;
+  width: 100%;
 }
 .add {
   display: flex;
@@ -17,17 +24,22 @@
   border-radius: 6px;
 }
 .add a {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
 }
+.table {
+  display: flex;
+  justify-content: center;
+}
 table {
   border-collapse: collapse;
+  width: 100%;
 }
 th,
 td {
   border: 1px solid #dddddd;
-  text-align: left;
+  text-align: center;
   padding: 8px;
 }
 th {
@@ -50,4 +62,8 @@ table button:hover {
 }
 td {
   font-weight: bold;
+}
+
+.hide {
+  display: none;
 }
