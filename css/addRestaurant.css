@@ -1,3 +1,65 @@
+:root {
+  --main-color: #ffa734;
+  --second-color: #232323;
+  --text-color: rgba(0, 0, 0, 0.6);
+  --link-size: 1.3rem;
+  --main-transition: 0.3s;
+  --bg-white: #ffffff;
+  --grey-background: #f8f9f9;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection {
+  background-color: var(--main-color);
+  color: var(--bg-white);
+}
+.t-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.t-center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+}
+.flex-items {
+  display: flex;
+  align-items: center;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.rounded {
+  border-radius: 6px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 .content {
   text-align: center;
 }
@@ -11,15 +73,19 @@ label {
 }
 .line > div label {
   text-align: start;
+  color: var(--bg-white);
 }
 
 .add-restaurants {
-  background-color: red;
+  background-color: var(--second-color);
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
   align-items: center;
+}
+.add-restaurants h2 {
+  color: var(--main-color);
 }
 .inner-div {
   width: 100%;

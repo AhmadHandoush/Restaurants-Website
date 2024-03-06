@@ -3,9 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/Home.css">
+    <title>Foodie</title>
   </head>
   <body>
-    hello
+    <header class="nav" , id="nav">
+      <div class="logo"><a href="#"><img src="../assets/logo.png" alt="logo"> </a> </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">home </a> </li>
+          <li><a href="#">About </a> </li>
+          <li><a href="#">Contact Us </a> </li>
+          <li><a class="sign-out" href="#" class="nav_button">Sign Out</a></li>
+        </ul>
+        
+      </nav>
+    </header>
+    <section class="hero">  
+      <div class="hero-info">
+        <h1> It's not just <br> FOOD It's an <br> EXPERIENCE . </h1>
+        <button class="explore-button" >Explore</button>
+      </div>
+      <div class="hero-image"><img src="../assests/112-removebg-preview.png" alt="Hero" /></div>
+      
+    </section>
+    <section>
+      <div class="wrapper">
+        <div  class = "search-container"id="search-container">
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search Restaurant name here.."
+          />
+          <button class="search" id="search">Search</button>
+        </div>
+        <div class="buttons" id="buttons">
+          <button class="button-value" onclick="filterProduct('all')">All</button>
+          <button class="button-value" onclick="filterProduct('Vegan')">
+            Vegan
+          </button>
+          <button class="button-value" onclick="filterProduct('Lebanese')">
+           Lebanese
+          </button>
+          <button class="button-value" onclick="filterProduct('Italian')">
+            Italian
+          </button>
+          <button class="button-value" onclick="filterProduct('Favorite')">
+            Favorites 
+          </button>
+        </div>
+        <div  class="products"id="products"></div>
+      </div>
+      <div class="products" id="products">
+        <div class="container">
+          <ul class="cards" id="cards">
+           
+          </ul>
+        </div>
+      </div>
+      <section class="about-us">
+        <h1>About Us</h1>
+        <h2>Welcome to Our Culinary Journey , we believe in creating an exceptional dining experience that goes beyond just serving delicious food. Our culinary journey is rooted in a passion for quality ingredients, innovative recipes, and a commitment to customer satisfaction.
+        </h2>
+        <!-- Add more content about your restaurant or business -->
+      </section>
+      <script src="../scripts/Home.js"></script>
   </body>
 </html>
