@@ -8,6 +8,13 @@ if (users) {
     let userPlace = document.createElement("td");
     let emailPlace = document.createElement("td");
     let passwordPlace = document.createElement("td");
+    let del = document.createElement("td");
+    let btndelete = document.createElement("button");
+    let text = document.createTextNode("delete");
+    btndelete.appendChild(text);
+    del.appendChild(btndelete);
+
+    del.innerHTML = btndelete;
 
     userPlace.textContent = user.name;
     emailPlace.textContent = user.email;
