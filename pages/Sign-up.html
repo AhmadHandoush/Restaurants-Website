@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
 
-    <link rel="stylesheet" href="./css/Login.css" />
+    <link rel="stylesheet" href="../css/Sign-up.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -17,10 +17,14 @@
   <body>
     <section class="login">
       <div class="form">
-        <h1>Login</h1>
-        <form id="loginForm" class="flex-column">
+        <h1>Sign-Up</h1>
+        <div class="flex-column forms">
           <div class="input">
-            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="icon"><i class="fa-solid fa-user"></i></div>
+            <input type="text" id="username" placeholder="Username" required />
+          </div>
+          <div class="input">
+            <i class="fa-solid fa-envelope"></i>
             <input
               type="email"
               id="email"
@@ -38,14 +42,14 @@
             />
           </div>
           <div class="error" id="error"></div>
-          <button type="submit">Login</button>
+          <button id="submit">Register</button>
           <p class="for-sign-up">
-            Don't have an account?
-            <a href="./pages/Sign-up.html" class="sign-up">Sign-up</a>
+            You Already have an Account?
+            <a href="../index.html" class="sign-up">Login</a>
           </p>
-        </form>
+        </div>
       </div>
     </section>
-    <script src="./js/Login.js"></script>
+    <script src="../js/sign-up.js"></script>
   </body>
 </html>
