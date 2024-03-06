@@ -1,6 +1,6 @@
 :root {
-  --main-color: #2196f3;
-  --second-color: rgba(0, 0, 0, 0.7);
+  --main-color: #ffa734;
+  --second-color: #232323;
   --text-color: rgba(0, 0, 0, 0.6);
   --link-size: 1.3rem;
   --main-transition: 0.3s;
@@ -65,9 +65,9 @@ p {
 .sidebar {
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 90vh;
   width: 300px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--second-color);
   padding: 20px;
 }
 .sidebar ul {
@@ -76,10 +76,13 @@ p {
 }
 .sidebar li {
   padding: 10px 20px;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid var(--main-color);
+}
+.sidebar h3 a {
+  color: var(--bg-white);
 }
 .sidebar li a {
-  color: #495057;
+  color: var(--bg-white);
   text-decoration: none;
   display: flex;
   gap: 10px;
@@ -93,7 +96,13 @@ p {
   color: var(--bg-white);
 }
 .sidebar li:hover {
-  background-color: #e9ecef;
+  background-color: var(--main-color);
+}
+.sidebar li:hover a {
+  color: var(--bg-white);
+}
+.sidebar li:hover a span {
+  color: var(--bg-white);
 }
 a:hover {
   text-decoration: none;
@@ -109,17 +118,28 @@ h3 {
   justify-content: center;
 }
 .content .box {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--second-color);
   padding: 20px;
 }
 .content .box p {
   text-align: center;
   font-weight: bold;
   font-size: 30px;
+  color: var(--bg-white);
+}
+nav h1 a {
+  color: var(--main-color);
+}
+.content h3 {
+  color: var(--main-color);
+}
+nav h1 a:hover {
+  color: var(--main-color);
+  opacity: 0.6;
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--second-color);
 }
 .navbar .navbar-brand {
   color: var(--bg-white);
@@ -129,4 +149,32 @@ nav h1 {
 }
 nav h1 a {
   font-size: 40px;
+}
+
+.nav-icon {
+  display: none;
+}
+body {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .nav-icon {
+    display: block;
+  }
+  .sidebar {
+    /* position: absolute; */
+    transform: translateX(-400px);
+    top: 40px;
+
+    height: 100vh;
+    width: 300px;
+    left: 0;
+  }
+  .open {
+    left: 300px;
+  }
+  .sidebar {
+    left: -300px;
+  }
 }

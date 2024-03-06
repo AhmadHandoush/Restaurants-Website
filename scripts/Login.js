@@ -7,7 +7,7 @@ form.addEventListener("submit", function (e) {
   let msg;
   e.preventDefault();
 
-  if (name === "foodieRAL2728@gmail.com" && password === "SEF27foodie28") {
+  if (email === "admin@gmail.com" && password === "admin") {
     window.location.replace("../pages/admin.html");
   } else {
     const users = JSON.parse(localStorage.getItem("us-lists")) || [];

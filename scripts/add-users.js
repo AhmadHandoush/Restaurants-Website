@@ -1,5 +1,6 @@
 let submit = document.getElementById("submit");
 
+
 function registerUser() {
   // Get values from inputs
   let name = document.getElementById("name").value;
@@ -11,6 +12,8 @@ function registerUser() {
     name: name,
     email: email,
     password: password,
+    []
+
   };
 
   // Retrieve existing user data from local storage
