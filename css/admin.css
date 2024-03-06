@@ -127,3 +127,6 @@ h3 {
 nav h1 {
   text-align: center;
 }
+nav h1 a {
+  font-size: 40px;
+}

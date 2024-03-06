@@ -1,6 +1,7 @@
 let submit = document.getElementById("submit");
-
+let error = document.getElementById("error");
 submit.addEventListener("click", registerUser);
+let msg;
 
 function registerUser() {
   // Check if the fields are not empty
@@ -20,7 +21,8 @@ function registerUser() {
 
     const existUser = users.find((u) => u.name === name);
     if (existUser) {
-      alert("Username already exists. Please choose a different one.");
+      msg = "this account is already exist! Try Again please ";
+      error.innerText = msg;
       return;
     }
     // Add new user to the array

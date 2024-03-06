@@ -1,0 +1,28 @@
+.content {
+  text-align: center;
+}
+
+label {
+  display: block;
+}
+.line {
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.line > div label {
+  text-align: start;
+}
+
+.add-restaurants {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+.inner-div {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
