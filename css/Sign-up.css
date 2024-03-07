@@ -134,7 +134,7 @@ button:hover {
 }
 
 .error {
-  color: var(--error-color);
+  color: var(--bg-white);
   font-weight: bold;
 }
 

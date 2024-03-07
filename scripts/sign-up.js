@@ -31,7 +31,7 @@ function registerUser() {
     localStorage.setItem("us-lists", JSON.stringify(users));
 
     // alert("User registered successfully!");
-    window.location.reload();
+    window.location.replace("../index.html");
   } else {
     alert("Please fill in all fields.");
   }

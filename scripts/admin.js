@@ -9,11 +9,11 @@ if (users) {
   userNumbers.textContent = `${usersData.length}`;
 }
 
-let restaurants = localStorage.getItem("res-lists");
-if (restaurants) {
-  let resData = JSON.parse(restaurants);
-  resNumbers.textContent = `${restaurants.length}`;
-}
+// let restaurants = localStorage.getItem("res-lists");
+// if (restaurants) {
+//   let resData = JSON.parse(restaurants);
+//   resNumbers.textContent = `${restaurants.length}`;
+// }
 let openSide = () => {
   sidebar.classList.toggle = "open";
 };

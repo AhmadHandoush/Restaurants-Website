@@ -13,7 +13,7 @@ function registerUser() {
     password: password,
   };
 
-  // Retrieve existing user data from local storage
+  // get existing user data from local storage
   let existingUsers = JSON.parse(localStorage.getItem("us-lists")) || [];
 
   existingUsers.push(userData);

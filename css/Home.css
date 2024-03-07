@@ -68,7 +68,9 @@ header {
 }
 .hero .container {
   display: flex;
-  justify-content: space-between;
+  /* margin-right: 250px;
+  margin-bottom: 40px; */
+  /* justify-content: space-between; */
 }
 /* .hero > img {
   position: absolute;
@@ -132,7 +134,7 @@ header {
   margin: 1em 0;
 }
 .search-container input {
-  background-color: #ffffff;
+  background-color: #fceeee;
   color: #232323;
   width: 60%;
   border-bottom: 2px solid #ffa734;
@@ -172,7 +174,7 @@ header {
   padding: 2em 0;
 }
 .card {
-  background-color: #ffffff;
+  background-color: #f5c264;
   max-width: 18em;
   margin-top: 1em;
   padding: 1em;
@@ -208,6 +210,7 @@ header {
     grid-column-gap: 1em;
   }
 }
+
 /* */
 .card-content {
   border: none;
@@ -218,7 +221,7 @@ header {
   width: 60%;
   margin: 3%;
   background-color: #f1efefd3;
-  color: #ffa734;
+  color: #232323;
 }
 .cards {
   display: flex;
@@ -254,7 +257,7 @@ header {
 
 .card-category {
   font-style: italic;
-  color: #ffa734;
+  color: #ff9306;
   background-color: transparent;
   margin-bottom: 10px;
 }
@@ -279,15 +282,15 @@ header {
 }
 .about-us {
   text-align: center;
-  margin: 20px 0; /* Add some margin for spacing */
+  margin: 20px 0;
 }
 
 .about-us h1 {
   font-size: 36px;
   color: #ffa734;
   font-weight: bold;
-  margin-right: 55px;
-  margin-bottom: 10px;
+
+  text-align: center;
 }
 
 .about-us h2 {

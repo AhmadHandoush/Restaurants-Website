@@ -9,7 +9,7 @@
   <body>
     <header class="nav" , id="nav">
       <div class="container">
-      <div class="logo"><a href="#">Foodie</a> </div>
+      <div class="logo"><a href="#"><img src="../assests/logo.png" alt=""></a> </div>
       <nav class="navbar">
         <ul>
           <li><a href="#">Home </a> </li>
@@ -42,19 +42,11 @@
           <button class="search" id="search">Search</button>
         </div>
         <div class="buttons" id="buttons">
-          <button class="button-value" onclick="filterProduct('all')">All</button>
-          <button class="button-value" onclick="filterProduct('Vegan')">
-            Vegan
-          </button>
-          <button class="button-value" onclick="filterProduct('Lebanese')">
-           Lebanese
-          </button>
-          <button class="button-value" onclick="filterProduct('Italian')">
-            Italian
-          </button>
-          <button class="button-value" onclick="filterProduct('Favorite')">
-            Favorites 
-          </button>
+          <button class="button-value" data-category="all">All</button>
+          <button class="button-value" data-category="Vegan">Vegan</button>
+          <button class="button-value" data-category="Lebanese">Lebanese</button>
+          <button class="button-value" data-category="Italian">Italian</button>
+          <button class="button-value" data-category="Favorite">Favorites</button>
         </div>
         <div  class="products"id="products"></div>
       </div>
@@ -69,7 +61,7 @@
         <h1>About Us</h1>
         <h2>Welcome to Our Culinary Journey , we believe in creating an exceptional dining experience that goes beyond just serving delicious food. Our culinary journey is rooted in a passion for quality ingredients, innovative recipes, and a commitment to customer satisfaction.
         </h2>
-        <!-- Add more content about your restaurant or business -->
+        
       </section>
       <script src="../scripts/Home.js"></script>
   </body>
